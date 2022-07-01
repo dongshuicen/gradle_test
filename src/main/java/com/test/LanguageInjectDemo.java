@@ -3,14 +3,19 @@ package com.test;
 public class LanguageInjectDemo {
 
     void jsonInject() {
-        String json = "{\"name\":\"张三\"}";
+        String json = "{\n" +
+                "  \"name\": \"张三\",\n" +
+                "\"age\": 12\n" +
+                "}";
     }
 
     void sqlInject() {
-        String sql = "select 1 from dual";
+        //language=SQL
+        String sql = "select 1 from dual  where 1=1";
     }
 
     void regexpInject() {
+        //language=RegExp
         String regexp = "[a-z]{4}";
     }
 }

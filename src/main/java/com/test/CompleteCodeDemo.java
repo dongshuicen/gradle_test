@@ -8,14 +8,16 @@ public class CompleteCodeDemo {
     private String name;
     void variableDemo() {
 //        new CompleteCodeDemo();
+//        String str = "str";
+        CompleteCodeDemo completeCodeDemo = new CompleteCodeDemo();
 //        CompleteCodeDemo completeCodeDemo = new CompleteCodeDemo();
     }
 
     Integer returnDemo() {
         int int1 = 1;
 
+        return int1;
 //        int1.return
-        return 0;
     }
 
     void notNullDemo() {
@@ -33,10 +35,19 @@ public class CompleteCodeDemo {
 
     void testIf() {
         boolean existsIfDemo = "input".equals(name);
+
     }
 
     void formatDemo() {
         String str = "Hello Java!";
 //        str.format
+    }
+
+    void tryDemo() {
+        try {
+            formatDemo();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
